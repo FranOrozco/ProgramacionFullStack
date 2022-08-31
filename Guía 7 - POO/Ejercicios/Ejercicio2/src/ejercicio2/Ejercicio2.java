@@ -11,22 +11,18 @@ c) Método para crearCircunferencia(): que le pide el radio y lo guarda en el at
 objeto.
 d) Método area(): para calcular el área de la circunferencia (���� = � ∗ ������).
 e) Método perimetro(): para calcular el perímetro (��������� = � ∗ � ∗ �����).
-*/
-
-
+ */
 public class Ejercicio2 {
 
-
     public static void main(String[] args) {
-        Scanner leer = new Scanner (System.in);
-        Circunferencia coso = new Circunferencia ();
-        
+        Scanner leer = new Scanner(System.in);
+        Circunferencia coso = new Circunferencia();
+
         coso.crearCircunferencia();
-        
-        
-        System.out.println("El area es: "+coso.area()+" metros."); 
-        System.out.println("El perimetro es: "+coso.perimetro()+" metros.");
-        
+
+        System.out.println("El area es: " + coso.area() + " metros.");
+        System.out.println("El perimetro es: " + coso.perimetro() + " metros.");
+
     }
-    
+
 }

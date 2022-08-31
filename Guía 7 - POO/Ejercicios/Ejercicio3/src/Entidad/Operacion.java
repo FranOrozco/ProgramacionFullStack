@@ -20,11 +20,12 @@ package Entidad;
 import java.util.Scanner;
 
 public class Operacion {
+
     Scanner leer = new Scanner(System.in);
     private int numero1;
     private int numero2;
-    
-    public Operacion(){
+
+    public Operacion() {
     }
 
     public Operacion(int numero1, int numero2) {
@@ -47,45 +48,46 @@ public class Operacion {
     public void setNumero2(int numero2) {
         this.numero2 = numero2;
     }
-     
+
     // d) Método para crearOperacion(): que le pide al usuario los dos números y los guarda en 
     //    los atributos del objeto.
-    public void crearOperacion(){
+    public void crearOperacion() {
         System.out.println("Ingrese el primer número: ");
         numero1 = leer.nextInt();
         System.out.println("Ingrese el segundo número: ");
         numero2 = leer.nextInt();
     }
-    
+
     // e) Método sumar(): calcular la suma de los números y devolver el resultado al main.
-    public int sumar(){
+    public int sumar() {
         return numero1 + numero2;
     }
-    
+
     // f) Método restar(): calcular la resta de los números y devolver el resultado al main
-    public int restar(){
+    public int restar() {
         return numero1 - numero2;
-    }    
-    
+    }
+
     // g)   Método multiplicar(): primero valida que no se haga una multiplicación por cero, si 
     //      fuera a multiplicar por cero, el método devuelve 0 y se le informa al usuario el error. Si 
     //      no, se hace la multiplicación y se devuelve el resultado al main
-    public int multiplicar(){
-        if (numero1 == 0 || numero2 == 0){
+    public int multiplicar() {
+        if (numero1 == 0 || numero2 == 0) {
             System.out.println("ERROR: uno de los números es 0. No se puede multiplicar.");
             return 0;
         } else {
             return numero1 * numero2;
         }
     }
-    
-    /*
-    h) Método dividir(): primero valida que no se haga una división por cero, si fuera a pasar 
+
+    /**
+   h) Método dividir(): primero valida que no se haga una división por cero, si fuera a pasar 
         una división por cero, el método devuelve 0 y se le informa al usuario el error se le 
         informa al usuario. Si no, se hace la división y se devuelve el resultado al main.
-    */
-    public double dividir(){
-        if (numero2 == 0){
+     * @return numero1 / numero2
+     */
+    public double dividir() {
+        if (numero2 == 0) {
             System.out.println("ERROR: el divisor es 0. No se puede dividir.");
             return 0;
         } else {
